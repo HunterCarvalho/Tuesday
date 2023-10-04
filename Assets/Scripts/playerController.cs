@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public LayerMask whatIsGround;
     private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 10f;
     private bool isFacingRight = true;
+    private bool isGrounded;
+    public float jumpForce;
+    public Transform groundPoint;
 
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
@@ -28,7 +32,22 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        Flip();
+        RaycastHit hit;
+        if (Physics.Raycast(groundPoint.position, Vector3.down, out hit, .2f, whatIsGround))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.velocity = new Vector3(0f, jumpForce, 0f);
+        }
+
+        //Flip();
     }
 
     private void FixedUpdate()
