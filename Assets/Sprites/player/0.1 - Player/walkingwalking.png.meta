@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9020cddc8edb17944b9f07e8112e03a8
+guid: c30a985e7298d654eb062310ee517d08
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: theorysheet2_0
+      name: walkingwalking_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
+        x: 3
+        y: 0
         width: 13
-        height: 25
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215029378a3715c409b521c1fb648aae
-      internalID: -1303058947
+      spriteID: f2fdc6e9761b15a45b972d248be27bf8
+      internalID: 1763148341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: theorysheet2_1
+      name: walkingwalking_1
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1
-        width: 13
-        height: 25
+        x: 18
+        y: 0
+        width: 11
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93d450de37ed92f45a95e05df278689e
-      internalID: -1790371120
+      spriteID: 0d7b28b7133e25f46bf0077340d25d0b
+      internalID: -774765349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: theorysheet2_2
+      name: walkingwalking_2
       rect:
         serializedVersion: 2
-        x: 27
-        y: 1
-        width: 13
-        height: 25
+        x: 32
+        y: 0
+        width: 11
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +205,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86b583ff99b644349a1e88a990fd3ac5
-      internalID: 481648173
+      spriteID: 1e10925a14bcfaf44994f97af6d5e883
+      internalID: -1530217881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingwalking_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f8f4175e771ac4994cb93e0bc78c36
+      internalID: 1297216714
       vertices: []
       indices: 
       edges: []
@@ -222,9 +243,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      theorysheet2_0: -1303058947
-      theorysheet2_1: -1790371120
-      theorysheet2_2: 481648173
+      walkingwalking_0: 1763148341
+      walkingwalking_1: -774765349
+      walkingwalking_2: -1530217881
+      walkingwalking_3: 1297216714
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
