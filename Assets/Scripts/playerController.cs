@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 13f;
+    private float jumpingPower = 14.1f;
     private bool isFacingRight = true;
     private bool isGrounded;
     public float jumpForce;
