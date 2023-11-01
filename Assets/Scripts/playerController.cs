@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private bool isFacingRight = true;
     private bool isGrounded;
     public float jumpForce;
+    private bool gameOver = false;
     public Transform groundPoint;
 
     [SerializeField] public Rigidbody2D rb;
@@ -49,7 +51,15 @@ public class PlayerController : MonoBehaviour
 
         //Flip();
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            gameOver = true;
+            Debug.Log("Game Over.");
+        }
 
+    }
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
