@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
@@ -13,6 +15,9 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public float jumpForce;
     private bool gameOver = false;
+    public bool hasTitle;
+    public float titleSpeed;
+    public float titleJumpingPower;
     public Transform groundPoint;
 
     [SerializeField] public Rigidbody2D rb;
@@ -51,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
         //Flip();
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -78,6 +83,19 @@ public class PlayerController : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Powerup"))
+        {
+            hasTitle = true;
+            titleSpeed = speed + 2f;
+            speed = titleSpeed;
+            titleJumpingPower = jumpingPower + 2f;
+            jumpingPower = titleJumpingPower;
+            Destroy(other.gameObject);
         }
     }
 }
