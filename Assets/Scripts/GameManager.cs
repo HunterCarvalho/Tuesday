@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     public void ControlMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void Return()
     {
@@ -47,5 +47,20 @@ public class GameManager : MonoBehaviour
     public void BackToHome()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
+
+    public void StoryMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+    }
+
+    public void BackToGuide()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+    }
+
+    public void ControlsLose()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
