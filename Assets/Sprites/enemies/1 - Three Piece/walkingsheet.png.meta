@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -153,9 +153,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 8
-        width: 8
-        height: 8
+        y: 6
+        width: 10
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7c9abc35a777bd4c9766dd3228df64f
-      internalID: 1166974968
+      spriteID: bb4d6cde33ae3bc49bef29ca8a71e441
+      internalID: 2124507017
       vertices: []
       indices: 
       edges: []
@@ -173,10 +173,10 @@ TextureImporter:
       name: walkingsheet_1
       rect:
         serializedVersion: 2
-        x: 15
-        y: 8
-        width: 8
-        height: 8
+        x: 14
+        y: 6
+        width: 10
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3151d38f91ddbc74180f720a84cf081f
-      internalID: 847715555
+      spriteID: 8da6d0ed699bfa3449e484ba4fc17651
+      internalID: -1791214354
       vertices: []
       indices: 
       edges: []
@@ -201,8 +201,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walkingsheet_0: 1166974968
-      walkingsheet_1: 847715555
+      walkingsheet_0: 2124507017
+      walkingsheet_1: -1791214354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

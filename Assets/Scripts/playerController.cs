@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
         {
             gameOver = true;
             Debug.Log("Game Over.");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
         }
 
     }
