@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 14.1f;
-    private bool isFacingRight = true;
+    public bool flip;
     private bool isGrounded;
     public float jumpForce;
     private bool gameOver = false;
@@ -54,7 +54,23 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(0f, jumpForce, 0f);
         }
 
-        //Flip();
+        {
+            Vector3 scale = transform.localScale;
+
+            if (transform.position.x > transform.position.x)
+            {
+                scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
+                transform.Translate(x: speed * Time.deltaTime, y: 0, z: 0);
+            }
+            else
+            {
+                scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
+                transform.Translate(x: speed * Time.deltaTime * -1, y: 0, z: 0);
+            }
+
+            transform.localScale = scale;
+        }
+
     }
     private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
@@ -76,16 +92,7 @@ public class PlayerController : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    private void Flip()
-    {
-        if (isFacingRight && horizontal < 0f || isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
-    }
+  
 
     public void OnTriggerEnter2D(Collider2D other)
     {
