@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float titleSpeed;
     public float titleJumpingPower;
     public Transform groundPoint;
+    bool facingRight = true;
 
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -54,24 +55,8 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(0f, jumpForce, 0f);
         }
 
-        {
-            Vector3 scale = transform.localScale;
-
-            if (transform.position.x > transform.position.x)
-            {
-                scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
-                transform.Translate(x: speed * Time.deltaTime, y: 0, z: 0);
-            }
-            else
-            {
-                scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
-                transform.Translate(x: speed * Time.deltaTime * -1, y: 0, z: 0);
-            }
-
-            transform.localScale = scale;
-        }
-
     }
+
     private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
