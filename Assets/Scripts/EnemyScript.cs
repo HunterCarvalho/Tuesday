@@ -7,7 +7,7 @@ public class EnemyScript : MonoBehaviour
     public GameObject Player;
 
     public bool flip;
-    public float speed; 
+    public float speed;
 
     private void Update()
     {
@@ -26,5 +26,4 @@ public class EnemyScript : MonoBehaviour
 
         transform.localScale = scale;
     }
-
 }
