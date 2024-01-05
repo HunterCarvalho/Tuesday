@@ -63,7 +63,7 @@ public class PlayerController2 : MonoBehaviour
         {
             gameOver = true;
             Debug.Log("Game Over.");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }

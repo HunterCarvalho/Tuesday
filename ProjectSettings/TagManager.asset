@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Powerup
   - Taxi
+  - Big Foot
   layers:
   - Default
   - TransparentFX
