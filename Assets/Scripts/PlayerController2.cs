@@ -77,8 +77,6 @@ public class PlayerController2 : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-  
-
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Powerup"))
@@ -88,6 +86,11 @@ public class PlayerController2 : MonoBehaviour
             speed = titleSpeed;
             titleJumpingPower = jumpingPower + 2f;
             jumpingPower = titleJumpingPower;
+            Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("Coin"))
+        {
             Destroy(other.gameObject);
         }
     }

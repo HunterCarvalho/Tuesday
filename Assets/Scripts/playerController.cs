@@ -65,8 +65,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Game Over.");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
         }
-
     }
+
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -88,6 +88,11 @@ public class PlayerController : MonoBehaviour
             speed = titleSpeed;
             titleJumpingPower = jumpingPower + 2f;
             jumpingPower = titleJumpingPower;
+            Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("Coin"))
+        {
             Destroy(other.gameObject);
         }
     }
