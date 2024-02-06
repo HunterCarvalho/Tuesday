@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2769738489358323567}
   - component: {fileID: 8109452883131613941}
-  - component: {fileID: 5315814080555929055}
+  - component: {fileID: 4970457841761656492}
   m_Layer: 6
   m_Name: africatallplatform
   m_TagString: Ground
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5315814080555929055
+--- !u!61 &4970457841761656492
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,16 +117,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.47506052}
+  m_Offset: {x: 0, y: 0.68423915}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.96}
+    oldSize: {x: 0.31, y: 1.38}
     newSize: {x: 0.31, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.31, y: 0.009878904}
+  m_Size: {x: 0.31, y: 0.011521518}
   m_EdgeRadius: 0
