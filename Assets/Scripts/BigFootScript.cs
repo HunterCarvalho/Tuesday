@@ -32,7 +32,7 @@ public class BigFootScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 9);
         }
 
     }
