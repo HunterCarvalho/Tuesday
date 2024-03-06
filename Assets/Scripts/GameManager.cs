@@ -122,4 +122,19 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
     }
+
+    public void BackToHome5()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 12);
+    }
+
+    public void RestartLvl5()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void Controls5()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 11);
+    }
 }
