@@ -137,4 +137,19 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 11);
     }
+
+    public void BackToHome6()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 14);
+    }
+
+    public void RestartLvl6()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void Controls6()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 13);
+    }
 }
