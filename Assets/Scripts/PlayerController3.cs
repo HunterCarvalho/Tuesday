@@ -20,10 +20,17 @@ public class PlayerController3 : MonoBehaviour
     public float titleJumpingPower;
     public Transform groundPoint;
     bool facingRight = true;
+    public AudioClip collectSound;
+    private AudioSource playerAudio;
 
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    private void Start()
+    {
+        playerAudio = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -92,6 +99,7 @@ public class PlayerController3 : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
+            playerAudio.PlayOneShot(collectSound, 1.0f);
         }
     }
 }
