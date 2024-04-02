@@ -18036,7 +18036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 795209289}
   flip: 0
-  speed: 7
+  speed: 8
 --- !u!1001 &1656793745
 PrefabInstance:
   m_ObjectHideFlags: 0
