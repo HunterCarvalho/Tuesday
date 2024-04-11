@@ -66,12 +66,12 @@ public class GameManager : MonoBehaviour
 
     public void BossScreen()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
     }
 
     public void BossToGuide()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
     }
 
     public void RestartLvl1()
@@ -167,4 +167,40 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 14);
     }
+
+    public void GOTOLVL1()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 8);
+    }
+
+    public void GOTOLVL2()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void GOTOLVL3()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+
+    public void GOTOLVL4()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+    }
+
+    public void GOTOLVL5()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
+
+    public void GOTOLVL6()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+    }
+
+    public void GOTOLVL7()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 9);
+    }
+
 }

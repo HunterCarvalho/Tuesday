@@ -9333,7 +9333,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  flip: 0
+  flip: 1
   jumpForce: 0
   hasTitle: 0
   titleSpeed: 0

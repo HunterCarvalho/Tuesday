@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController4 : MonoBehaviour
 {
+    public GameObject player;
     public LayerMask whatIsGround;
     private float horizontal;
     private float speed = 8f;
@@ -19,7 +20,7 @@ public class PlayerController4 : MonoBehaviour
     public float titleSpeed;
     public float titleJumpingPower;
     public Transform groundPoint;
-    bool facingRight = true;
+    // public bool facingRight = true;
     public AudioClip collectSound;
     private AudioSource playerAudio;
 
@@ -60,6 +61,12 @@ public class PlayerController4 : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector3(0f, jumpForce, 0f);
+        }
+
+        if (Input.GetButtonDown("Left"))
+        {
+            flip = true;
+            player.transform.position = transform.position + new Vector3();
         }
 
     }
