@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1ef30ccb4eb51b4189b759ef1eb783a
+guid: f393ee2c91c85764f840268a6853d178
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Djinn_0
+      name: loch sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 20
-        height: 48
+        width: 91
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +163,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a6b139e6dc25614780df23a666221a0
-      internalID: 879815605
+      spriteID: d3d333629342cdd418e973802128c9b6
+      internalID: -1276513089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loch sheet_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 91
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f3925c9212a4a448329ace23a2f7b4
+      internalID: -524613091
       vertices: []
       indices: 
       edges: []
@@ -180,7 +201,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Djinn_0: 879815605
+      loch sheet_0: -1276513089
+      loch sheet_1: -524613091
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

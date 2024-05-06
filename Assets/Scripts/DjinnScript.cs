@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ThyScript : MonoBehaviour
+public class DjinnScript : MonoBehaviour
 {
     public GameObject Player;
 
@@ -32,7 +32,7 @@ public class ThyScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 8);
         }
 
     }
