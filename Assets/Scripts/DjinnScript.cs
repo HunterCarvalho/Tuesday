@@ -32,7 +32,7 @@ public class DjinnScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 8);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 9);
         }
 
     }
