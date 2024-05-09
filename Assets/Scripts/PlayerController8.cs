@@ -5,11 +5,11 @@ using Unity.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class PlayerController7 : MonoBehaviour
+public class PlayerController8 : MonoBehaviour
 {
     public LayerMask whatIsGround;
     private float horizontal;
-    private float speed = 8f;
+    private float speed = 20f;
     private float jumpingPower = 14.1f;
     public bool flip;
     private bool isGrounded;
@@ -70,14 +70,9 @@ public class PlayerController7 : MonoBehaviour
         {
             gameOver = true;
             Debug.Log("Game Over.");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
-        if (collision.gameObject.CompareTag("NEXT SCENE"))
-        {
-            Debug.Log("Final Boss.");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-        }
     }
 
     private void FixedUpdate()
