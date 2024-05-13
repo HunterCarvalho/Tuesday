@@ -73,6 +73,13 @@ public class PlayerController8 : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
+        if (collision.gameObject.CompareTag("Enemy2"))
+        {
+            gameOver = true;
+            Debug.Log("Game Over.");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+
     }
 
     private void FixedUpdate()

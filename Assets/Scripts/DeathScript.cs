@@ -28,4 +28,13 @@ public class DeathScript : MonoBehaviour
         transform.localScale = scale;
     }
 
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy2"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+    }
+
 }

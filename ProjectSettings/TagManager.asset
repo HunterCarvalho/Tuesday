@@ -11,6 +11,7 @@ TagManager:
   - Big Foot
   - Coin
   - NEXT SCENE
+  - Enemy2
   layers:
   - Default
   - TransparentFX
