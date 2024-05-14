@@ -203,4 +203,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 9);
     }
 
+    public void GOHOME()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -18);
+    }
+
 }

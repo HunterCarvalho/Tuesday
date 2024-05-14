@@ -28,12 +28,12 @@ public class LochScript : MonoBehaviour
         transform.localScale = scale;
     }
 
-    //private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
-    //{
-        //if (collision.gameObject.CompareTag("Enemy"))
-        //{
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-        //}
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("loch"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
 
-    //}
+    }
 }

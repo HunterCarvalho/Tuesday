@@ -12,6 +12,7 @@ TagManager:
   - Coin
   - NEXT SCENE
   - Enemy2
+  - loch
   layers:
   - Default
   - TransparentFX
